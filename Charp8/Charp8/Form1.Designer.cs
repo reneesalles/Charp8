@@ -53,7 +53,7 @@
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(284, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(379, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -127,31 +127,35 @@
             this.xToolStripMenuItem2,
             this.xToolStripMenuItem3});
             this.sizeToolStripMenuItem.Name = "sizeToolStripMenuItem";
-            this.sizeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sizeToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.sizeToolStripMenuItem.Text = "Window Size";
             // 
             // xToolStripMenuItem
             // 
             this.xToolStripMenuItem.Name = "xToolStripMenuItem";
-            this.xToolStripMenuItem.Size = new System.Drawing.Size(85, 22);
+            this.xToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
+            this.xToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.xToolStripMenuItem.Text = "1x";
             // 
             // xToolStripMenuItem1
             // 
             this.xToolStripMenuItem1.Name = "xToolStripMenuItem1";
-            this.xToolStripMenuItem1.Size = new System.Drawing.Size(85, 22);
+            this.xToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.F2;
+            this.xToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.xToolStripMenuItem1.Text = "2x";
             // 
             // xToolStripMenuItem2
             // 
             this.xToolStripMenuItem2.Name = "xToolStripMenuItem2";
-            this.xToolStripMenuItem2.Size = new System.Drawing.Size(85, 22);
+            this.xToolStripMenuItem2.ShortcutKeys = System.Windows.Forms.Keys.F3;
+            this.xToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.xToolStripMenuItem2.Text = "3x";
             // 
             // xToolStripMenuItem3
             // 
             this.xToolStripMenuItem3.Name = "xToolStripMenuItem3";
-            this.xToolStripMenuItem3.Size = new System.Drawing.Size(85, 22);
+            this.xToolStripMenuItem3.ShortcutKeys = System.Windows.Forms.Keys.F4;
+            this.xToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.xToolStripMenuItem3.Text = "4x";
             // 
             // volumeToolStripMenuItem
@@ -163,7 +167,8 @@
             // muteSoundToolStripMenuItem
             // 
             this.muteSoundToolStripMenuItem.Name = "muteSoundToolStripMenuItem";
-            this.muteSoundToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.muteSoundToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)));
+            this.muteSoundToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.muteSoundToolStripMenuItem.Text = "Mute Sound";
             // 
             // languageToolStripMenuItem
@@ -187,7 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(256, 128);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
