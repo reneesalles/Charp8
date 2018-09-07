@@ -13,5 +13,9 @@ namespace Charp8 {
         public Form1() {
             InitializeComponent();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e) {
+            Application.Exit();
+        }
     }
 }
