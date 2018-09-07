@@ -25,13 +25,22 @@
         private void InitializeComponent() {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.softResetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hardResetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.sizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.volumeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.muteSoundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.xToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.xToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +60,7 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripMenuItem,
+            this.toolStripSeparator2,
             this.softResetToolStripMenuItem,
             this.hardResetToolStripMenuItem,
             this.toolStripSeparator1,
@@ -58,18 +68,6 @@
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
-            // 
-            // configToolStripMenuItem
-            // 
-            this.configToolStripMenuItem.Name = "configToolStripMenuItem";
-            this.configToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.configToolStripMenuItem.Text = "Config";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.aboutToolStripMenuItem.Text = "About";
             // 
             // openToolStripMenuItem
             // 
@@ -90,6 +88,11 @@
             this.hardResetToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.hardResetToolStripMenuItem.Text = "Hard Reset";
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
@@ -98,10 +101,80 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // toolStripSeparator1
+            // configToolStripMenuItem
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.configToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sizeToolStripMenuItem,
+            this.volumeToolStripMenuItem,
+            this.muteSoundToolStripMenuItem,
+            this.languageToolStripMenuItem});
+            this.configToolStripMenuItem.Name = "configToolStripMenuItem";
+            this.configToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.configToolStripMenuItem.Text = "Config";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Text = "About";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            // 
+            // sizeToolStripMenuItem
+            // 
+            this.sizeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.xToolStripMenuItem,
+            this.xToolStripMenuItem1,
+            this.xToolStripMenuItem2,
+            this.xToolStripMenuItem3});
+            this.sizeToolStripMenuItem.Name = "sizeToolStripMenuItem";
+            this.sizeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sizeToolStripMenuItem.Text = "Window Size";
+            // 
+            // volumeToolStripMenuItem
+            // 
+            this.volumeToolStripMenuItem.Name = "volumeToolStripMenuItem";
+            this.volumeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.volumeToolStripMenuItem.Text = "Volume";
+            // 
+            // muteSoundToolStripMenuItem
+            // 
+            this.muteSoundToolStripMenuItem.Name = "muteSoundToolStripMenuItem";
+            this.muteSoundToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.muteSoundToolStripMenuItem.Text = "Mute Sound";
+            // 
+            // languageToolStripMenuItem
+            // 
+            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.languageToolStripMenuItem.Text = "Language";
+            // 
+            // xToolStripMenuItem
+            // 
+            this.xToolStripMenuItem.Name = "xToolStripMenuItem";
+            this.xToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.xToolStripMenuItem.Text = "1x";
+            // 
+            // xToolStripMenuItem1
+            // 
+            this.xToolStripMenuItem1.Name = "xToolStripMenuItem1";
+            this.xToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.xToolStripMenuItem1.Text = "2x";
+            // 
+            // xToolStripMenuItem2
+            // 
+            this.xToolStripMenuItem2.Name = "xToolStripMenuItem2";
+            this.xToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.xToolStripMenuItem2.Text = "3x";
+            // 
+            // xToolStripMenuItem3
+            // 
+            this.xToolStripMenuItem3.Name = "xToolStripMenuItem3";
+            this.xToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.xToolStripMenuItem3.Text = "4x";
             // 
             // Form1
             // 
@@ -130,6 +203,15 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem sizeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem xToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem xToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem xToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem xToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem volumeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem muteSoundToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
     }
 }
 
