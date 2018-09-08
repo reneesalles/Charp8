@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace Charp8 {
     public partial class Form1 : Form {
+
+        private Charp8.model.Charp8 emulator;
+
         public Form1() {
             InitializeComponent();
         }
@@ -18,8 +21,16 @@ namespace Charp8 {
             Application.Exit();
         }
 
-        private void toolStripMenuItem1_Click (object sender, EventArgs e) {
-
+        private void openToolStripMenuItem_Click(object sender, EventArgs e) {
+            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
+                emulator.initialize();
+                if (emulator.loadGame(openFileDialog1.FileName)) {
+                    // iniciar o Loop do jogo
+                }
+                else {
+                    // alertar que a ROM não foi encontrada ou houve algum problema
+                }
+            }
         }
     }
 }
