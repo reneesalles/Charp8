@@ -32,5 +32,26 @@ namespace Charp8 {
                 }
             }
         }
+
+        private void Form1_Load (object sender, EventArgs e) {
+
+        }
+
+        private void Size1xMenu_Click (object sender, EventArgs e) {
+            Form1.ActiveForm.Size = new Size (336, 223);
+        }
+
+        private void Size2xMenu_Click (object sender, EventArgs e) {
+            Form1.ActiveForm.Size = new Size (656, 383);
+        }
+
+        private void Size3xMenu_Click (object sender, EventArgs e) {
+            Form1.ActiveForm.Size = new Size (976, 543);
+        }
+
+        private void Size4xMenu_Click (object sender, EventArgs e) {
+            Form1.ActiveForm.Size = new Size (1276, 703);
+        }
+
     }
 }
